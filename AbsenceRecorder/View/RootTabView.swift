@@ -10,14 +10,14 @@ import SwiftUI
 struct RootTabView: View {
     var body: some View {
         TabView{
-            DivisionsView(divisions: Division.examples)
+            DivisionsView()
                 .tabItem{
                     Image(systemName: "square.and.pencil")
                     Text ("Absences")
                 }
             StatisticsView()
                 .tabItem{
-                    Image(systemName: "rectangle.and.pencil.and.ellipsis")
+                    Image(systemName: "chart.pie")
                     Text("Statistics")
                 }
         }
