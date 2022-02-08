@@ -10,6 +10,7 @@ import Foundation
 class Division {
     let code: String
     var students: [Student] = []
+    var absences: [Absence] = []
     
     init(code: String){
         self.code = code
@@ -21,7 +22,7 @@ class Division {
         let division = Division(code:code)
         
         for i in 0..<size {
-            let student = Student(forename: "Firstname\(i)", surname: "Surname\(i)", birthday: Date())
+            let student = Student(forename: "Firstname\(i+1)", surname: "Surname\(i+1)", birthday: Date())
             division.students.append(student)
         }
         
