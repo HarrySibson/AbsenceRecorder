@@ -14,7 +14,7 @@ class DivisionTests: XCTestCase {
         
         let division = Division(code: "TestDiv")
         let dateToday = Date()
-        let dateTomorrow = Date(timeIntervalSinceNow: 86400)
+        let dateTomorrow = Date(timeIntervalSinceNow: 864000)
         let dateLaterToday = Date(timeIntervalSinceNow: 100)
         let absence1 = Absence(date: dateTomorrow, students: Student.examples)
         let absence2 = Absence(date: dateToday, students: Student.examples)
